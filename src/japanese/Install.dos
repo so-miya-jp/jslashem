@@ -1,0 +1,64 @@
+        Windows 9x/NT/2000/XP or DOS 用 JSLASH'EM-0.0.7E7F1-J0.1.1 のコンパイル例
+
+
+0) はじめに
+
+以下の手順は次の環境で検証されています．
+  Microsoft Windows 2000
+  Microsoft Windows XP sp2
+
+DJGPPがインストールされていることが前提となっています．
+DJGPPは http://www.delorie.com/djgpp/ で入手可能です．
+
+
+
+
+
+1) アーカイブの展開・パッチ当て
+
+http://jslashem.sourceforge.jp/#download
+で本家のソースとパッチを入手してください．
+  se007e7F1.tar.gz
+  jslashem-0.0.7E7F1-J0.1.1.diff.gz
+
+入手したソースとパッチをフォルダ(アルファベットのみで構成され，空白を含ま
+ない)に置いてください．プロンプトを開き，ソースとパッチを置いたフォルダに
+カレントディレクトリを移動させてください．
+
+c:\usr\jslashem> tar xfz se007e7f1.tar.gz
+c:\usr\jslashem> cd slashem-0.0.7E7F1
+c:\usr\jslashem\slashem-0.0.7E7F1> gzip -d ../jslashem-0.0.7E7F1-J0.1.1.diff.gz
+c:\usr\jslashem\slashem-0.0.7E7F1> nkf -Se < jslashem-0.0.7E7F1-J0.1.1.diff > jslashem-0.0.7E7F1-J0.1.1.euc.diff
+c:\usr\jslashem\slashem-0.0.7E7F1> patch -p1 < jslashem-0.0.7E7F1-J0.1.1.euc.diff
+
+※ロングファイルネームの使用できない環境や，当該ツールのない方は
+　自力で何とかしてください．
+
+
+2) コンパイルの準備
+
+Windows用のコンパイル環境を整えます．
+
+c:\usr\jslashem\slashem-0.0.7E7F1> cd sys\msdos
+c:\usr\jslashem\slashem-0.0.7E7F1\sys\msdos> setup gcc
+
+
+3) ファイルの編集
+
+現在ALLEGRO版の動作保証はできません．（動作確認できた方はご報告ください）
+
+slashem-0.0.7E7F1\src\Makefile の YACC_LEX オプションを Y から N に変更します．
+slashem-0.0.7E7F1\src\Makefile の USE_ALLEGRO オプションを Y から N に変更します．
+slashem-0.0.7E7F1\include\pcconf.h の #define ALLEG_FX をコメントアウトします．
+
+
+4) コンパイル
+
+c:\usr\jslashem\slashem-0.0.7E7F1\src> make
+c:\usr\jslashem\slashem-0.0.7E7F1\src> make install
+
+
+5) 注意点
+
+JGUIDEBO.TXTはEUC文字コードでないとゲーム内で開いたときに文字化けしてしまします．
+逆に直接開いたときはEUC文字コードに対応したビューアでないと見れません．

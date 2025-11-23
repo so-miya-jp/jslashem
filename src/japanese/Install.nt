@@ -1,0 +1,101 @@
+        Windows 2000/XP 用 JSLASH'EM-0.0.7E7F1-J0.1.1 のコンパイル例
+
+
+0) はじめに
+
+以下の手順は次の環境で検証されています．
+  Microsoft Windows 2000
+  Microsoft Windows XP sp2
+
+以下のコンパイル環境がインストールされていることが前提になっております．
+  http://www.mingw.org/
+    MinGW-3.1.0-1.exe
+      c:/mingwにインストール．
+      ＃ PATHにcygwinのbinへのパスが通っていると
+      ＃ mingw32-make内のバッチコマンドがうまく動きません．
+  http://homepage2.nifty.com/tenk/
+    cc1_sj111.lzh
+      cc1_sj111.lzhを解凍し，cc1_sj.txtに書いてある手順通りに
+      c:/mingw/lib/gcc-lib/3.2.3/フォルダ配下のcc1*.exeの
+      ファイル名変更，置換え等を行う．
+  http://sourceforge.net/project/showfiles.php?group_id=71914
+    GTK-Development-Environment-2.2.4.1.exe
+    GTK-Runtime-Environment-2.2.4.1.exe
+      GTK-Development-Environment-2.2.4.1.exeをc:/win-gtkにインストール
+      GTK-Runtime-Environment-2.2.4.1.exeを標準インストール
+  http://sourceforge.jp/projects/mingw-jp/
+    libiconv-2.dll
+    windres.exe
+      c:/mingw/binにコピー
+
+  PATHに
+    c:\MinGW\bin
+    c:\Program Files\Common Files\GTK\2.0\lib
+    c:\win-gtk\bin
+  を追加．
+
+  環境変数を以下のように設定：
+    SET LANG=ja
+
+それと，patchパッケージが別途インストールされている必要があります．
+
+
+1) アーカイブの展開・パッチ当て
+
+http://jslashem.sourceforge.jp/#download
+で本家のソースとパッチを入手してください．
+  se007e7f1.tar.gz
+  jslashem-0.0.7E7F1-J0.1.1.diff.gz
+
+入手したソースとパッチをフォルダ(アルファベットのみで構成され，空白を含ま
+ない)に置いてください．プロンプトを開き，ソースとパッチを置いたフォルダに
+カレントディレクトリを移動させてください．
+
+c:\usr\jslashem> tar xfz se007e7f1.tar.gz
+c:\usr\jslashem> cd slashem-0.0.7E7F1
+c:\usr\jslashem\slashem-0.0.7E7F1> gzip -d ../jslashem-0.0.7E7F1-J0.1.1.diff.gz
+c:\usr\jslashem\slashem-0.0.7E7F1> patch -p1 < jslashem-0.0.7E7F1-J0.1.1.diff
+
+2) コンパイルの準備
+
+Windows用のコンパイル環境を整えます．
+
+c:\usr\jslashem\slashem-0.0.7E7F1> cd sys\winnt
+c:\usr\jslashem\slashem-0.0.7E7F1\sys\winnt> setup.bat
+
+
+3) ファイルの編集
+
+  src\MakefileのGAMEDIRをインストール先に変更．
+  src\MakefileのCFLAGSに-D_CPP_SJがあることを確認．
+  src\MakefileのUSE_MSWINを有効化．
+  src\MakefileのUSE_GTKを有効化．
+  src\MakefileのUSE_PROXYを有効化．
+  win\share\*.txtの改行コードを全てCR-LF(\r\n)に変更．
+  include\config.cのPROXY_GRAPHICSを有効化．
+  include\config.cのMSWIN_GRAPHICSを有効化．
+  include\config.cの#ifdef PROXY_GRAPHICS内でGTK_PROXYを有効化
+
+4) コンパイル
+
+c:\usr\jslashem\slashem-0.0.7E7F1> cd src
+c:\usr\jslashem\slashem-0.0.7E7F1\src> mingw32-make install
+c:\usr\jslashem\slashem-0.0.7E7F1\src> mingw32-make nhproxy.a
+c:\usr\jslashem\slashem-0.0.7E7F1\src> cd ..\win\gtk
+c:\usr\jslashem\slashem-0.0.7E7F1\win\gtk> mingw32-make -f Makefile.w32
+c:\usr\jslashem\slashem-0.0.7E7F1\win\gtk> copy gtkhack.exe ..\..\binary
+
+
+留意事項：
+Windows2000では問題ないが，Windows Xpではjdata.hが文字化けしてしまう．
+その対処には現状のところ他コンパイラでmakedefs.exeを作成実行する以外に解決法が見つかっていない．
+
+  Borland C++ Compiler 5.01でMinGWコンパイル用のjdata.hを作成する方法：
+    Borland C++ Compilerが動く環境を用意する．
+    3)まで済ませた状態で，\sys\winntからMakefile.bccをコピーする．
+    次の行を，
+      @$(cc) $(CFLAGSU) -o$@ $(U)makedefs.c
+    次のように書き換える．
+      @$(cc) $(CFLAGSU) -o$@ -D_CPP_SJ $(U)makedefs.c
+    \srcフォルダ配下で以下のコマンドを実行．
+      make -f Makefile.bcc ..\include\jdata.h

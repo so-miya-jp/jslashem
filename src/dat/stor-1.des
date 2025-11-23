@@ -1,0 +1,54 @@
+#
+# Storage level (#1)
+#
+
+#
+#	Japanese version Copyright (c) Masaki Miyaso, Shiganai Sakusha 2004-2007
+#	changing point is marked `JP' (2007/1/8)
+#	JSLASH'EM may be freely redistributed.  See license for details. 
+#
+
+LEVEL: "stor-1"
+
+ROOM: "ordinary", unlit, random, random, (4,4)
+NAME: "central"
+OBJECT:'(',"chest",(2,2)
+OBJECT:'/',random,(2,2)
+OBJECT:'(',random,(2,2)
+OBJECT:'(',random,(2,2)
+OBJECT:'"',random,(2,2)
+OBJECT:'=',random,(2,2)
+#JP
+#ENGRAVING:(2,2),burn,"Begone! Keep Off! Shoo!"
+ENGRAVING:(2,2),burn,"立ち去れ！入ってくんな！シッシッ！"
+TRAP: random, random
+TRAP: random, random
+TRAP: random, random
+  
+ROOM: "ordinary" , random, random, random, random
+STAIR: random, up
+OBJECT: random,random,random
+MONSTER: random, random, random, hostile
+
+ROOM: "ordinary" , random, random, random, random
+STAIR: random, down
+OBJECT: random, random, random
+TRAP: random, random
+MONSTER: random, random, random, hostile
+
+ROOM: "ordinary" , random, random, random, random
+OBJECT: random, random, random
+OBJECT: random, random, random
+MONSTER: random, random, random, hostile
+
+ROOM: "ordinary" , random, random, random, random
+OBJECT: random, random, random
+TRAP: random, random
+MONSTER: random, random, random, hostile
+
+ROOM: "ordinary" , random, random, random, random
+OBJECT: random, random, random
+TRAP: random, random
+MONSTER: random, random, random, hostile
+
+RANDOM_CORRIDORS

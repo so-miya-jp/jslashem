@@ -1,0 +1,104 @@
+	Linux 用 JSlash'EM 0.0.7E6F3-J0.0.10 のコンパイル例
+
+
+0) はじめに
+
+Plamo Linux 4.0rc で tty 版をコンパイルした例です．
+
+
+1) アーカイブの展開・パッチ当て
+
+http://slashem.sourceforge.net/
+http://jslashem.sourceforge.jp/
+
+$ tar zxvf se007e6f3.tar.gz
+$ cd slashem-0.0.7E6F3
+$ zcat jslashem-0.0.7E6F3-J0.0.10.diff.gz | nkf -e | patch -p1
+$ sh sys/unix/setup.sh
+ 
+
+2) ファイルの編集
+
+2-1) Makefile の該当行を編集
+
+GAMEGRP = games
+GAMEPERM = 02755
+FILEPERM = 0644
+EXEPERM = 755
+DIRPERM = 775
+
+
+2-2) src/Makefile の該当行を編集
+
+CFLAGS = -O2 -fomit-frame-pointer -I../include
+LFLAGS =
+
+
+2-3) util/Makefile の該当行を編集
+
+CFLAGS = -O2 -fomit-frame-pointer -I../include
+LFLAGS =
+
+
+2-4) include/unixconf.h の該当行を編集
+
+コメントアウトされている Linux の定義を有効にします．
+
+#define SYSV
+#define LINUX
+#define TERMINFO
+#define TIMED_DELAY
+
+
+2-5) include/config.h の該当行を編集
+
+#define DLB
+#define COMPRESS "/usr/bin/gzip"
+
+
+3) コンパイル
+
+$ make all
+
+
+4) インストール
+
+4-1) はじめてインストールする場合
+
+# make install
+
+
+4-2) 上書きする場合(セーブデータが保護されます)
+
+# make update
+
+
+5) エラーメッセージ
+
+5-1) インストール時に chgrp: invalid group name `games'
+
+システムに games グループが登録されていません．
+新しく games グループを作るか Makefile の GAMEGRP を変更してインストールしてください．
+
+
+5-2) 起動時に Warning: cannot write scoreboard file record
+
+record ファイルのパーミッションが設定されていない場合表示されます．
+
+# chmod g+w /usr/local/jslashemdir/record
+
+上記のように書き込み権限を有効にします．
+
+
+5-3) 終了時に Cannot open log file!
+
+logfile ファイルのパーミッションが設定されていない場合表示されます．
+
+# chmod g+w  /usr/local/jslashemdir/logfile
+
+上記のように書き込み権限を有効にします．
+
+
+5-4) セーブ時にセーブできないと表示された場合．
+
+# chmod g+w  /usr/local/jslashemdir/save

@@ -1,0 +1,257 @@
+SLASH'EM History file for release 0.0.7
+
+見よ，死すべきものよ，SLASH'EMの起源を．．．
+
+Jay Fenlason が最初の Hack を Kenny Woodland, Mike Thome および Jon Payne
+の助けのもとに記述しました．
+
+Andries Brouwer はこれを大きく書き直し，Hack をまったく異なるゲームに仕立
+て，UNIX(tm) で動く(少なくとも) 3つのバージョン (1.0.1, 1.0.2 および
+1.0.3) を Usenet で公開しました．
+
+Don G. Kneller は Hack 1.0.3 を Microsoft(tm) C および MS-DOS(tm) へ移植
+し，PC HACK 1.01e を制作しました．加えて DEC Rainbow グラフィックを 1.03g
+でサポートし，少なくとも 4 つ以上のバージョンを制作しました．(3.0, 3.2,
+3.51 および 3.6)．
+
+P. Black は PC HACK 3.51を Lattice(tm) C および，Atari 520/1040STへ移植し，
+ST Hack 1.03 を制作しました．
+
+Mike Stephenson はこれら色々なバージョンを一緒に統合し，新な機能を加え，
+Nethack バージョン 1.4 を制作しました．彼はその後 1000 にも及ぶ，NetHack
+1.4 の改良および，デバッグを重ねて調整を行い，NetHack バージョン 2.2 およ
+び 2.3 をリリースしました．
+
+その後，Mike はゲームを大幅に書き換えて調整し，Ken Arromdee，
+Jean-Christophe Collet，Steve Creps，Eric Hendrickson，Izchak Miller，
+Eric S. Raymond，John Rupley，Mike Threepoint および Janet Walz を含むチー
+ムの先頭に立ち，NetHack 3.0c を制作しました．同グループはその後10のリビジ
+ョンパッチをリリースして 3.0 をアップデートしていきました．
+
+NetHack 3.0 は Eric R. Smith によって Atari に移植され，Timo Hakulinenによ
+ってOS/2に移植され，Dabvid Gentzelによって VMSに移植されました．彼ら 3 人
+および，Kevi Darcy は後に 3.0 のリビジョンを制作したメイン開発チームに合流
+しました．
+
+Olaf Seibert は NetHack 2.3 および 3.0 を Amiga に移植しました．
+Norm Meluch，Stephen Spackman および Pierre Martineau は PC NetHack 3.0 用
+のオーバレイコードを設計しました．Johnny Lee は NetHack 3.0 を Macintosh
+に移植しました．彼らは他の多くのダンジョンマニア達と共に PC, Macintosh お
+よび Amiga に 3.0 以降のリビジョンを移植しました．
+
+Nethack の次のメジャーバージョンのリリースが途絶えた一ヶ月の間に，2つの冒
+険的な魂が，神聖なる公式 Nethack に対して彼ら独自の修正を試みました．
+Tom Proudfoot と Yuval は Nethack++ (それはすぐに Nethack-- へと改名されま
+した) をリリースしました．それは新しいモンスター，アイテムおよび他の様々な
+修正を含んでいました．
+
+Mike Stephenson を中心とし，Izchak Miller および Janet Walz が調整役となっ
+て，今や Ken Arromdee, David Cohrs, Jean-Christophe Collet, Kevin Darcy, 
+Matt Day, Timo Hakulinen, Steve Linhart, Dean Luick, Pat Rankin, 
+Eric Raymond および， Eric Smith をも含んだ開発チームは 3.0 の抜本的なリビ
+ジョンに着手しました．彼らはゲームをデザインしなおし，コードの大部分を書き
+直しました．彼らは複合したダンジョン，新しい表示形式，キャラクター毎のクエ
+スト，新しい最終試練および沢山の新しい機能を加え，NetHack 3.1 を制作しまし
+た．
+
+Ken Lorber, Gregg Wonderly および Grag Olson は Richard Addison,
+Mike Passaretti および Olaf Seibert の手を借り Amiga の NetHack 3.1 を開発
+しました．
+
+Norm Meluch および Kevin Smolkowski は Carl Schelin, Stephen Spackman
+Steve VanDevenderおよび Paul Winner の手を借り，NetHack 3.1 を PC に移植し
+ました．
+
+Jon Watte および Hao-yang Wangは Ross Brown, Mike Engber, David Hairston,
+Micheal Hamel, Jonathan Handler, Johnny Lee, Tim Lennan, Rob Menke
+および Andy Swanson の手を借り，Macintosh 用 Nethack 3.1を開発し，MPW用に
+移植しました．その開発の際，Barton House は Think C 版を追加しました．
+
+Timo Hakulinen は NetHack 3.1 を OS/2 に移植しました．Eric Smith は
+NetHack 3.1 を Atari に移植しました．このとき Pat Rankin は Joshua
+Delahunty の手を借り，NetHack 3.1のVMSバージョンに対応しています．Michael
+Allison は NetHack3.1 を Windows NT に移植しました．
+
+Dean Luick は David Cohrs の手を借り，X11 用の NetHack 3.1 を開発しました．
+Warwick Allison は "タイル"バージョンのゲームを追加し，NetHack 3.2 用の視
+覚的なタイルを生成しました．
+
+時は流れ，Chris の手によって NetHack-- が 3.11 に移植されました．
+
+Stephen White は，新しい職業が追加された，以後 Nethack Plus として知られる
+ことになる独自改造版をリリースしました．一般的には知られていませんが，Tom
+Proudfoot はこのソースを用いて，彼の Nethack-- とそれを結合したとされてい
+ます． Stephen White は続けて武器スキル (それは最終的に次バージョンの
+Nethack へ統合されました) および他のフィーチャーを追加しました．
+
+1996年2月，Tom Proudfoot は SLASH V1 をリリースしました．これは Stephen
+White の Nethack Plus と彼の Nethack--，言及されていない彼独自による大量の
+修正 (これはNetHackの修正としてよく知られていました) を含んでいました．こ
+れに関して SLASH V6 で終わる 6 つのバージョンが知られています．
+
+3.2 開発チームは次のとおりでした：
+Michael Allison，Ken Arromdee，David Cohrs，Jessie Collet，Steve Creps，
+Kevin Darcy，Timo Hakulinen，Steve Linhart，Dean Luick，Pat Rankin，Eric
+Smith，Mike Stephenson，Janet Walz および Paul Winner．
+彼らによってバージョン 3.2は1996年4月にリリースされました．
+
+バージョン 3.2 は開発チームが結成されてから 10 周年のものでした．彼らのゲ
+ームへの貢献について記すと，13 人の初期の開発チーム全員はこのリリースの開
+始時の最初の時点までチームに残っていました．しかし， 3.1.3 から 3.2 の間に，
+開発チームの創始者の一人である Izchak Miller 博士が癌と診断され，お亡くな
+りになりました．このリリースは開発および移植チームによって彼に捧げられまし
+た．
+
+バージョン 3.2 はそれまでのバージョン中でもっとも安定していました．多くの
+バグが修正され，許されざるべき行為は駆逐され，よりよいゲームプレイのため各
+機能が調整されました．
+
+SLASH V6 は Enrico Horn によってピックアップされ，3.2 ソースとなんとかして
+同期がとられました．その新しい SLASH 4.1.2 は1996年11月を皮切りに4つのエデ
+ィットレベル (E5, E6, E7) を経て最終的には4.1.2E8として Nethack 3.2.2 と同
+期し，かつブラックマーケットオプションを有効にして1997年6月にリリースとな
+りました．
+
+Nathan La は SLASH のモンスターのタイルを描くと言う困難な作業を開始しまし
+た．
+
+白方健太郎は SLASH 4.1.2E8 を Unix に移植しました．
+
+Lief Clennon は SLASH 4.1.2E8 を OS/2 に移植しました．
+
+Romain Dolbeau は SLASH 4.1.2E8 を Macintosh に移植しました．
+
+Warren Cheung は1997年11月にSLASH 4.1.2 と Wizard Patch を結合し
+SLASH'EM 0.1 を作成しました．新しい魔法といくつかの細かな機能追加を含む改
+良が行われ，SLASH'EM 0.0.3となりました．Steven Uy は大量の追加修正を行いま
+した．
+
+Dirk Schoenberger が SLASH/SLASH'EM のモンスタータイルを引き継いで更新しま
+した．また，彼は SLASH'EM を Linux に移植しました．
+
+Lief Clennon は SLASH'EM を OS/2 EMX に移植しました．
+
+Kevin Hugo は SLASH'EM を Macintosh に移植し, 付加的な変更と改良に貢献しま
+した．
+
+Robin Johnson は SLASH'EM のモンスタータイルを描くという困難な作業を完了さ
+せました．また，彼はさらに多くの新しいタイルに貢献しました．
+
+Kevin は開発チームに後から加わり，NetHack 3.3 に最善のアイデアを組み込みま
+した．
+
+1994年以来ずっと，JNetHack (日本語版NetHack) が沼田一成と他によって開発さ
+れています．GTK インターフェースはこのバリアントのために記述され，1999年にリ
+リースされました．
+
+板倉充洋を代表としたチームによって NetHack タイルを8bitカラーの32x32サイズ
+に書き直す作業が開始されました．
+
+3.2の最後の更新はバグ修正リリースの3.2.3で，同時に 3.3.0 が2000年に間に合
+わせるために1999年12月にリリースされました．
+
+3.3 開発チーム (Michael Allison, Ken Arromdee，David Cohrs，Jessie Collet，
+Steve Creps，Kevin Darcy，Timo Hakulinen，Kevin Hugo，Steve Linhart，
+Ken Lorber，Dean Luick，Pat Rankin，Eric Smith，Mike Stephenson，Janet Walz，
+およびPaul Winnerからなる) は，3.3.0 を 1999年12月に，3.3.1 を 2000年8月に
+リリースしました．
+
+バージョン 3.3 は多くの「初めて」を提供しました．それは種族と職業を分離し
+た最初のバージョンでした．クラスのエルフの代わりに種族のエルフが追加され，
+ドワーフ，ノーム，そしてオークが人間種族と同等の種族として初登場しました．
+武闘家とレンジャーが職業として，考古学者，野蛮人，洞窟人，薬師，騎士，僧侶，
+盗賊，侍，観光客，ワルキューレ，そしてもちろん魔法使いの仲間入りを果たしま
+した．そしてまた，騎乗できるようになった最初のバージョンであり，発見された
+すべてのバグの一覧を掲載する公的なウェブサイトを持つ最初のバージョンでした．
+そしてその絶えず増加し続けたバグの一覧にもかかわらず，3.3 は 1年半以上続く
+ほど安定していました．
+
+Warren Cheung は SLASH'EM 0.0.5E7F1 と NetHack 3.3 を結合し，SLASH'EM 0.0.6
+とし，また DOS 版と Microsoft Windows 版のメンテナンスを行いました．
+
+J. Ali Harlow は，GTKインタフェースと板倉充洋の32x32タイルセットを SLASH'EM
+0.0.6 に組み込み，またその UNIX 版のメンテナンスを行いました．Peter Makholm
+は Debian パッケージのメンテナンスを行いました．
+
+Paul Hurtley はMAC 版のSLASH'EM 0.0.6のメンテナンスを行いました．
+
+3.4 開発チームは初期は Michael Allison，Ken Arromdee，David Cohrs，
+Jessie Collet，Kevin Hugo，Ken Lorber，Dean Luick，Pat Rankin，
+Mike Stephenson，Janet Walz，および Paul Winner からなり，NetHack 3.4.0 が
+2002年3月にリリースされる直前に Warwick Allison が参加しました．
+
+バージョン 3.3のように，NetHack が異なる環境で動作するようにするなどの協力
+によって様々な人々がゲームに貢献しました：
+
+Pat Rankin は VMS 版の 3.4をメンテナンスしました．
+
+Michael Allison は MS-DOS 環境用の NetHack 3.4 をメンテナンスしました．
+Paul Winner と Yitzhak Sapir はそれを促進しました．
+
+Dean Luick，Mark Modrall，および Kevin Hugo は Macintosh版の 3.4 をメンテ
+ナンスし，拡張しました．
+
+Michael Allison，David Cohrs，Alex Kompel，Dion Nicolaas，および Yitzhak
+Sapir によってMicrosoft Windows環境用の 3.4 がメンテナンス，拡張されました．
+Alex Kompel は Windows 版のための新しいグラフィカルインターフェースに貢献
+しました．また，Alex Kompel は3.4.1 用の Windows CE 版に対しても貢献しまし
+た．
+
+Ron Van Iwaarden は OS/2 用の 3.4 をメンテナンスしました．
+
+Janne Salmijarvi が Amiga 版を3.3.1用に復活させた後，Janne Salmijarvi と
+Teemu Suikki は 3.4 の Amiga 版をメンテナンスし，拡張しました．
+
+Christian `Marvin' Bressler は Atari 用の 3.4 を，3.3.1 用に復活させた後で
+メンテナンスしました．
+
+Warren Cheung，Christian Cooper，J. Ali Harlow，Paul Hurtley，Pekka Rousu
+および Darshan Shaligram は SLASH'EM 0.0.6E5F2 と Nethack 3.4 を結合させ，
+SLASH'EM 0.0.7 を作成しました．
+
+The Slash'EM home page は http://www.slashem.org/ にあります．
+
+                           - - - - - - - - - -
+
+時々，堕落した人物が彼らのネットランドからゲームの手助けとなるような興味を
+そそる改良案を送ってくる．ダンジョンの神はこれら堕ちるところまで堕ちた人間
+たちの名前をきまぐれでひかえている．そのダンジョンマニアたちは以下である:
+
+    Adam Aronow               Izchak Miller             Mike Stephenson
+    Alex Kompel               J. Ali Harlow             Norm Meluch
+    Andreas Dorn              Janet Walz                Olaf Seibert
+    Andy Church               Janne Salmijarvi          Pasi Kallinen
+    Andy Swanson              Jean-Christophe Collet    Pat Rankin
+    Ari Huttunen              Jochen Erwied             Paul Winner
+    Barton House              John Kallen               Pierre Martineau
+    Benson I. Margulies       John Rupley               Ralf Brown
+    Bill Dyer                 John S. Bien              Ray Chason
+    Boudewijn Waijers         Johnny Lee                Richard Addison
+    Bruce Cox                 Jon W{tte                 Richard Beigel
+    Bruce Holloway            Jonathan Handler          Richard P. Hughey
+    Bruce Mewborne            Joshua Delahunty          Rob Menke
+    Carl Schelin              Keizo Yamamoto            Robin Johnson
+    Chris Russo               Ken Arnold                Roderick Schertler
+    David Cohrs               Ken Arromdee              Roland McGrath
+    David Damerell            Ken Lorber                Ron Van Iwaarden
+    David Gentzel             Ken Washikita             Ronnen Miller
+    David Hairston            Kevin Darcy               Ross Brown
+    Dean Luick                Kevin Hugo                Sascha Wostmann
+    Del Lamb                  Kevin Sitze               Scott Bigham
+    Deron Meranda             Kevin Smolkowski          Scott R. Turner
+    Dion Nicolaas             Kevin Sweet               Stephen Spackman
+    Dylan O'Donnell           Lars Huttar               Stephen White
+    Eric Backus               Malcolm Ryan              Steve Creps
+    Eric Hendrickson          Mark Gooderum             Steve Linhart
+    Eric R. Smith             Mark Modrall              Steve VanDevender
+    Eric S. Raymond           Marvin Bressler           Teemu Suikki
+    Erik Andersen             Matthew Day               Tim Lennan
+    Frederick Roeber          Merlyn LeRoy              Timo Hakulinen
+    Gil Neiger                Michael Allison           Tom Almy
+    Greg Laskin               Michael Feir              Tom West
+    Greg Olson                Michael Hamel             Warren Cheung
+    Gregg Wonderly            Michael Sokolov           Warwick Allison
+    Hao-yang Wang             Mike Engber               Yitzhak Sapir
+    Helge Hafting             Mike Gallop               
+    Irina Rempt-Drijfhout     Mike Passaretti           
+

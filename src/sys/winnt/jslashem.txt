@@ -1,0 +1,51 @@
+Windows NT/2000/XP用 JSLASH'EM-0.0.7E7F3-J0.2.1
+
+このゲームはいくつかの動作モードを持っています．
+
+
+・TTYモード
+	プロンプト上にテキストキャラクターでゲーム画面を構成します．
+	スクロールすることなしにゲーム画面がスクリーンに収まりますし，
+	他のタイルを表示するモードに比べて動作が最も高速です．
+
+	default.nhにてOPTIONS=windowtype:ttyが定義されていることを確認の上，
+	jslashem.exeを実行することで動作させることができます．
+
+
+・WIN32モード
+	jslashem.exeに内蔵された16x16のタイルを用いてゲーム画面を構成します．
+	Windows APIで表示されていますので，タイルを表示するモードの中では最も
+	高速です．
+
+	default.nhにてOPTIONS=windowtype:mswinが定義されていることを確認の上，
+	jslashem.exeを実行することで動作させることができます．
+
+	なお，bmpファイルを定義することでタイルを変更することが可能です．
+	default.nhにて以下の設定を変更して設定してください．
+		OPTIONS=tile_file:tiles32.bmp,tile_width:32,tile_height:32
+
+
+・GTK-PROXYモード
+	GTK2+ライブラリを使用してゲーム画面を構成します．
+	他のモードに比べるとやや低速ですが，タイルの重ね合わせ透過表示，
+	擬似3D表示などが行えます．
+
+	GTKライブラリをインストールしなければ動かすことはできません．
+		サイト：http://sourceforge.net/projects/gtk-win/
+		対象ファイル：GTK-Runtime-Environment-2.2.4.1.exe
+	インストール後，手動でインストール先のlibディレクトリ
+	（デフォルトではc:\Program Files\Common Files\GTK\2.0\libです．）
+	を環境変数PATHに追加してください．
+	環境変数PATHの編集方法は自力で何とかしてください．
+	default.nhにてOPTIONS=windowtype:gtkが定義されていることを確認の上，
+	gtkhack.exeを実行することで動作させることができます．
+
+	なお，pngファイルを定義することでタイルを変更することが可能です．
+	default.nhにて以下の設定を変更して設定してください．
+		TILESET=name:Small tiles,file:gltile16.png
+		TILESET=name:Big tiles,file:gltile32.png,transparent
+		TILESET=name:Big 3D tiles,file:gltile64.png,transparent,pseudo3D
+		OPTIONS=tiles:Big tiles
+	上記にて定義したタイルをゲーム上の設定から選択することが可能です．
+
+設定や操作方法などはjGuidebook.txtとjopthelpを参考にしてください．
