@@ -1,0 +1,66 @@
+NETHACK GENERAL PUBLIC LICENSE
+(Copyright 1989 M. Stephenson)
+(Based on the BISON general public license, copyright 1988 Richard M. Stallman)
+Everyone is permitted to copy and distribute verbatim copies of this license, but changing it is not allowed. You can also use this wording to make the terms for other programs.
+The license agreements of most software companies keep you at the mercy of those companies. By contrast, our general public license is intended to give everyone the right to share NetHack. To make sure that you get the rights we want you to have, we need to make restrictions that forbid anyone to deny you these rights or to ask you to surrender the rights. Hence this license agreement.
+
+Specifically, we want to make sure that you have the right to give away copies of NetHack, that you receive source code or else can get it if you want it, that you can change NetHack or use pieces of it in new free programs, and that you know you can do these things.
+
+To make sure that everyone has such rights, we have to forbid you to deprive anyone else of these rights. For example, if you distribute copies of NetHack, you must give the recipients all the rights that you have. You must make sure that they, too, receive or can get the source code. And you must tell them their rights.
+
+Also, for our own protection, we must make certain that everyone finds out that there is no warranty for NetHack. If NetHack is modified by someone else and passed on, we want its recipients to know that what they have is not what we distributed.
+
+Therefore we (Mike Stephenson and other holders of NetHack copyrights) make the following terms which say what you must do to be allowed to distribute or change NetHack.
+
+COPYING POLICIES
+You may copy and distribute verbatim copies of NetHack source code as you receive it, in any medium, provided that you keep intact the notices on all files that refer to copyrights, to this License Agreement, and to the absence of any warranty; and give any other recipients of the NetHack program a copy of this License Agreement along with the program.
+You may modify your copy or copies of NetHack or any portion of it, and copy and distribute such modifications under the terms of Paragraph 1 above (including distributing this License Agreement), provided that you also do the following:
+a) cause the modified files to carry prominent notices stating that you changed the files and the date of any change; and
+
+b) cause the whole of any work that you distribute or publish, that in whole or in part contains or is a derivative of NetHack or any part thereof, to be licensed at no charge to all third parties on terms identical to those contained in this License Agreement (except that you may choose to grant more extensive warranty protection to some or all third parties, at your option)
+
+c) You may charge a distribution fee for the physical act of transferring a copy, and you may at your option offer warranty protection in exchange for a fee.
+
+You may copy and distribute NetHack (or a portion or derivative of it, under Paragraph 2) in object code or executable form under the terms of Paragraphs 1 and 2 above provided that you also do one of the following:
+a) accompany it with the complete machine-readable source code, which must be distributed under the terms of Paragraphs 1 and 2 above; or,
+
+b) accompany it with full information as to how to obtain the complete machine-readable source code from an appropriate archive site. (This alternative is allowed only for noncommercial distribution.)
+
+For these purposes, complete source code means either the full source distribution as originally released over Usenet or updated copies of the files in this distribution used to create the object code or executable.
+
+
+You may not copy, sublicense, distribute or transfer NetHack except as expressly provided under this License Agreement. Any attempt otherwise to copy, sublicense, distribute or transfer NetHack is void and your rights to use the program under this License agreement shall be automatically terminated. However, parties who have received computer software programs from you with this License Agreement will not have their licenses terminated so long as such parties remain in full compliance.
+Stated plainly: You are permitted to modify NetHack, or otherwise use parts of NetHack, provided that you comply with the conditions specified above; in particular, your modified NetHack or program containing parts of NetHack must remain freely available as provided in this License Agreement. In other words, go ahead and share NetHack, but don't try to stop anyone else from sharing it farther.
+----
+Nethack一般公衆利用許諾書
+Copyright (c) 1989 M. Stephenson
+(Based on the BISON general public license, copyright 1988 Richard M. Stallman)
+何人も、以下の内容を変更せずにそのまま複写する場合に限り、本使用許諾書を複製および頒布することができます。 また、本使用許諾書の文言を使用して、他のプログラムの条件とすることもできます。
+ほとんどのソフトウェア会社の使用許諾契約は、ユーザをそれらの会社の意のままに支配します。 それに対して、我々の一般公衆利用許諾は、NetHackを共有する権利をすべてのユーザに与えることを目的としています。 ユーザが我々の意図する権利を確実に享受できるように、我々は、何人もこれらの権利を否定したり、放棄するようにユーザに求めることはできないという制限条項を設ける必要があります。 こうした理由で、本使用許諾契約が作成されています。
+
+具体的には、我々は、ユーザがNetHackの複製物を自由に頒布できること、ソースコードを受け取るか、あるいは希望しさえすればそれを入手できること、NetHackを変更したり、その一部を新しいフリー・プログラムに使用できること、およびこれらの権利がユーザに知らされることを確実に実現したいと望んでいます。
+
+すべての人々にそうした権利が確実に与えられるように、我々はあなたが他の人々からこれらの権利を奪うことを禁止する必要があります。 たとえば、あなたがNetHackの複製を頒布する場合、あなたは自分の持っている権利をすべて相手に与えなければなりません。 あなたは、相手もまたソースコードを受け取ったり入手したりできるようにしなければなりません。 さらに、あなたは相手にこれらの権利のことを知らせなければなりません。
+
+また、我々自身を守るために、NetHackが無保証であることをすべての人々に了解してもらう必要があります。 NetHackが他の誰かによって変更され、頒布された場合、受領者はそのソフトウェアがオリジナル・バージョンではないということを知らされる必要があります。
+
+以上の理由から、我々（Mike Stephenson、および他のNetHack著作権保持者）は、NetHackの頒布または変更に関する条件を次のように定めます。
+
+複製に関するポリシー
+あなたは、どのような媒体上へ複製しようとする場合であっても、入手したNetHackのソースコードをそのままの内容で複写した上で、著作権、本使用許諾契約、および無保証に言及するすべてのファイル上の記載部分を元のままの形で表示する場合に限り、複製または頒布することができます。NetHackプログラムのその他の受領者に対しては、プログラムと共に本使用許諾契約の写しを渡してください。
+さらに次の条件を満たしている限り、あなたはNetHackの複製またはその一部分を変更し、上記第1項の条件（本使用許諾契約の頒布を含む）に従って、そのような変更版を複製および頒布することができます。
+（a）ファイルを変更した旨とその変更日とを、変更したファイル上に明確に表示すること。
+
+（b）変更したか否かを問わず、およそNetHackまたはその一部分を内部に組み込んでいるか、またはその派生物を頒布する場合には、本使用許諾契約に記載されたものとまったく同じ条件で、その全体を第三者へ無償で使用許諾すること（自らの判断により、第三者の一部または全部に対して、より広範囲な保証を与える場合を除く）。
+
+（c）複製物の引き渡しに要する頒布費を請求することができる。また、あなた独自の保証を行う場合は、それを有償とすることができる。
+
+次のいずれか1つの条件を満たす限り、上記第1項および第2項の条件に従って、NetHack（または、上記2項で言及しているNetHackの一部分または派生物）をオブジェクト・コードまたは実行可能形式で複製および頒布することができます。
+（a）対応する機械読み取り可能なソースコード一式を一緒に引き渡すこと。ソースコードの引き渡しは、上記第1項および第2項の条件に従って行われること。
+
+（b）対応する機械読み取り可能なソースコード一式を適切なアーカイブ・サイトから入手する方法に関する十分な情報を一緒に引き渡すこと。 （この方法は非商用の頒布についてのみ許可されます。）
+
+ここでいうソースコード一式とは、Usenetを介して最初にリリースされたときのままの完全なソース頒布物、もしくはオブジェクト・コードまたは実行可能形式の作成に使用された、本頒布物内の更新されたファイルの複製を指します。
+
+本使用許諾契約で明示的に許諾されている場合を除き、あなたはNetHackを複製、サブライセンス、頒布、または引き渡すことができません。 本使用許諾契約に従わずにNetHackを複製、サブライセンス、頒布、または引き渡そうとする行為は、それ自体が無効であり、本使用許諾契約に基づいてプログラムを使用するあなたの権利を自動的に消滅させます。 ただし、本使用許諾契約と共にあなたからコンピュータ・ソフトウェア・プログラムを受け取った第三者は、本使用許諾契約を完全に遵守している限り、引き続きプログラムを使用する権利を持つものとします。
+わかりやすく言えば、 上記の条件に従う限り、NetHackを変更し、またはその他の方法でNetHackの一部を使用することを許可します。特に、あなたが変更したNetHack、またはNetHackの一部が含まれるプログラムは、本使用許諾契約の規定どおりに自由に入手できるようにしておかなければなりません。 言い換えれば、遠慮なくNetHackを頒布してください。ただし、他の人々がそれをさらに頒布するのを妨げないでください。
